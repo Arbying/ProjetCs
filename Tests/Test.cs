@@ -4,7 +4,7 @@ using Modele;
 
 namespace Test
 {
-    class Test
+    class Program
     {
         static void Main(string[] args)
         {
