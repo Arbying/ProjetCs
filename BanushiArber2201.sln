@@ -5,9 +5,11 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modele", "Modele\Modele.csproj", "{A2538B96-AA02-47AA-87F8-1414E6F2C51F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MesTests", "MesTests\MesTests.csproj", "{4F48F54E-F1C8-499C-B178-66FAAC970580}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MesTests", "MesTests\MesTests.csproj", "{4F48F54E-F1C8-499C-B178-66FAAC970580}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vues", "Vues\Vues.csproj", "{D17FF773-ACBD-4BE9-8BEC-DD8944295EEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vues", "Vues\Vues.csproj", "{D17FF773-ACBD-4BE9-8BEC-DD8944295EEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewClient", "NewClient\NewClient.csproj", "{DE4E7854-F9F8-4484-87A9-19D865EA0B89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{D17FF773-ACBD-4BE9-8BEC-DD8944295EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D17FF773-ACBD-4BE9-8BEC-DD8944295EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D17FF773-ACBD-4BE9-8BEC-DD8944295EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE4E7854-F9F8-4484-87A9-19D865EA0B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE4E7854-F9F8-4484-87A9-19D865EA0B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE4E7854-F9F8-4484-87A9-19D865EA0B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE4E7854-F9F8-4484-87A9-19D865EA0B89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
