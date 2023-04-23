@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modele", "Modele\Modele.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MesTests", "MesTests\MesTests.csproj", "{4F48F54E-F1C8-499C-B178-66FAAC970580}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vues", "Vues\Vues.csproj", "{D17FF773-ACBD-4BE9-8BEC-DD8944295EEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4F48F54E-F1C8-499C-B178-66FAAC970580}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F48F54E-F1C8-499C-B178-66FAAC970580}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F48F54E-F1C8-499C-B178-66FAAC970580}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D17FF773-ACBD-4BE9-8BEC-DD8944295EEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D17FF773-ACBD-4BE9-8BEC-DD8944295EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D17FF773-ACBD-4BE9-8BEC-DD8944295EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D17FF773-ACBD-4BE9-8BEC-DD8944295EEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
