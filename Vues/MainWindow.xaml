@@ -15,7 +15,7 @@
             <!--Partie droite flexible-->
         </Grid.ColumnDefinitions>
         <!--Partie gauche-->
-        <StackPanel Grid.Column="0" Background="LightGreen" Margin="10">
+        <StackPanel Grid.Column="0" Background="LightGreen" Margin="10,10,10,0" Height="664" VerticalAlignment="Top">
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                 <Label Content="Client" VerticalAlignment="Center" Margin="0,0,10,0" FontSize="16"/>
                 <TextBox Text="Demander sa carte au client" VerticalAlignment="Center" FontSize="16" Width="402"/>
@@ -29,11 +29,62 @@
                 <Label Content="Nouveau" VerticalAlignment="Center" Margin="0,0,5,0" FontSize="16"/>
                 <TextBox Text="" VerticalAlignment="Center" FontSize="16" Width="50"/>
             </StackPanel>
-            <!--Contenu de la partie gauche-->
+
+            <!-- Ajout de stack panels -->
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Right">
+                <Label Content="Sous-total:" VerticalAlignment="Center" Margin="0,0,10,0" FontSize="16"/>
+                <TextBox VerticalAlignment="Center" FontSize="16" Width="100"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Right">
+                <Label Content="Réductions:" VerticalAlignment="Center" Margin="0,0,10,0" FontSize="16" Foreground="red"/>
+                <TextBox VerticalAlignment="Center" FontSize="16" Width="100"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Right">
+                <Label Content="TOTAL:" VerticalAlignment="Center" Margin="0,0,10,0" FontSize="16" Foreground="Blue" FontWeight="Bold"/>
+                <TextBox VerticalAlignment="Center" FontSize="16" Width="100"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Background="Yellow" Margin="0,0,0,10">
+                <Label Content="Tableau" Margin="0,0,10,0" FontSize="16" Height="462"/>
+                <!-- Contenu du tableau -->
+            </StackPanel>
+
+            <StackPanel  Background="Magenta" Margin="0,0,0,10">
+                <!-- Contenu de l'autre section -->
+                <DockPanel>
+
+                </DockPanel>
+            </StackPanel>
+            <!--Fin contenu de la partie gauche-->
         </StackPanel>
         <!--Partie droite-->
         <StackPanel Grid.Column="1" Background="LightBlue">
             <!--Contenu de la partie droite-->
+
+            <StackPanel Grid.Column="1" Background="LightBlue">
+                <TextBox Text="" Width="474" Margin="10" Height="37" FontSize="12"/>
+
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Button Content="Bouton 1" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                    <Button Content="Bouton 2" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                    <Button Content="Bouton 3" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                    <Button Content="Bouton 4" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                    <Button Content="Bouton 5" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                    <Button Content="Bouton 6" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Button Content="Bouton 7" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                    <Button Content="Bouton 8" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                    <Button Content="Bouton 9" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                    <Button Content="Bouton 10" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                    <Button Content="Bouton 11" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                    <Button Content="Bouton 12" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                </StackPanel>
+                
+            </StackPanel>
+
+            
         </StackPanel>
     </Grid>
 </Window>
