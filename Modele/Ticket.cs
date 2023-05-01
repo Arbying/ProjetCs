@@ -103,6 +103,8 @@ namespace Modele
             ticketString += "Total : " + CalculerTotal() + "€\n";
             return ticketString;
         }
+
+
         #endregion
     }
 }

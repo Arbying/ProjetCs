@@ -1,5 +1,9 @@
-﻿namespace Modele
+﻿using System.Runtime.Serialization.Formatters.Binary;
+using System.Text.Json;
+
+namespace Modele
 {
+
     public class Personne
     {
         #region Variables_membre
@@ -15,6 +19,11 @@
             _nom = "";
             _prenom = "";
             _dateNaissance = DateTime.Now;
+        }
+        public Personne(string nom, string prenom)
+        {
+            _nom = nom;
+            _prenom = prenom;
         }
 
         // Constructeur avec paramètres
@@ -62,6 +71,9 @@
         {
             return _nom + " " + _prenom + " (" + _dateNaissance.ToString("dd/MM/yyyy") + ")";
         }
+
+        
+
         #endregion
     }
 }

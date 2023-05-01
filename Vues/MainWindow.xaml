@@ -78,21 +78,21 @@
                     <TextBox Text="" Width="474" Margin="10" Height="37" FontSize="12"/>
 
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <Button Content="Bouton 1" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                        <Button Content="Bouton 2" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                        <Button Content="Bouton 3" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                        <Button Content="Bouton 4" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                        <Button Content="Bouton 5" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                        <Button Content="Bouton 6" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="+ Client" Width="80" Height="80" Background="Yellow"  Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="+ Article" Width="80" Height="80" Background="Yellow" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="A faire" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="A faire" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="A faire" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="A faire" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <Button Content="Bouton 7" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                        <Button Content="Bouton 8" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                        <Button Content="Bouton 9" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                        <Button Content="Bouton 10" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                        <Button Content="Bouton 11" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                        <Button Content="Bouton 12" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="Boulangerie" Width="80" Height="80" Background="Red" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="Div 6%" Width="80" Height="80" Background="Red" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="Div 21 %" Width="80" Height="80" Background="Red" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="Tabac" Width="80" Height="80" Background="Red" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="Fruits" Width="80" Height="80" Background="Red" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="Legumes" Width="80" Height="80" Background="Red" Foreground="Black" FontWeight="Bold"/>
                     </StackPanel>
 
                 </StackPanel>
