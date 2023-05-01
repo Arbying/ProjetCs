@@ -44,9 +44,18 @@
                 <TextBox VerticalAlignment="Center" FontSize="16" Width="100"/>
             </StackPanel>
 
-            <StackPanel Orientation="Vertical" Background="Yellow" Margin="0,0,0,10">
-                <Label Content="Tableau" Margin="0,0,10,0" FontSize="16" Height="462"/>
-                <!-- Contenu du tableau -->
+            <StackPanel Orientation="Vertical" Margin="0,0,0,10">
+                <ListView Margin="0,10,0,0" FontSize="16">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Article" Width="281"/>
+                            <GridViewColumn Header="Qté" Width="50"/>
+                            <GridViewColumn Header="Prix" Width="60"/>
+                            <GridViewColumn Header="Montant" Width="65"/>
+                        </GridView>
+                    </ListView.View>
+                    <!-- Ajouter des éléments ListViewItem ici pour chaque article -->
+                </ListView>
             </StackPanel>
 
             <StackPanel  Background="Magenta" Margin="0,0,0,10">
@@ -60,31 +69,113 @@
         <!--Partie droite-->
         <StackPanel Grid.Column="1" Background="LightBlue">
             <!--Contenu de la partie droite-->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="350"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Column="1" Grid.Row="0" Background="LightBlue">
+                    <TextBox Text="" Width="474" Margin="10" Height="37" FontSize="12"/>
 
-            <StackPanel Grid.Column="1" Background="LightBlue">
-                <TextBox Text="" Width="474" Margin="10" Height="37" FontSize="12"/>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Button Content="Bouton 1" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="Bouton 2" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="Bouton 3" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="Bouton 4" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="Bouton 5" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="Bouton 6" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                    </StackPanel>
 
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Button Content="Bouton 1" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                    <Button Content="Bouton 2" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                    <Button Content="Bouton 3" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                    <Button Content="Bouton 4" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                    <Button Content="Bouton 5" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                    <Button Content="Bouton 6" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Button Content="Bouton 7" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="Bouton 8" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="Bouton 9" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="Bouton 10" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="Bouton 11" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                        <Button Content="Bouton 12" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
+                    </StackPanel>
+
                 </StackPanel>
-
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Button Content="Bouton 7" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                    <Button Content="Bouton 8" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                    <Button Content="Bouton 9" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                    <Button Content="Bouton 10" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                    <Button Content="Bouton 11" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                    <Button Content="Bouton 12" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
-                </StackPanel>
-                
-            </StackPanel>
-
             
+                
+                   <!--- Pavé numérique, X et paiements -->
+                    <Grid Grid.Column="1" Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                            <!--- Parie pavé numérique et touches X, PLU-->
+                    <Grid Grid.Column="0" Margin="100,10,10,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0"> <!---Pavé numérique-->
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                            <Button Content="7" Width="1.5cm" Height="1cm" Margin="2" Background="White"/>
+                            <Button Content="8" Width="1.5cm" Height="1cm" Margin="2" Background="White" Grid.Column="1"/>
+                            <Button Content="9" Width="1.5cm" Height="1cm" Margin="2" Background="White" Grid.Column="2"/>
+
+                            <Button Content="4" Width="1.5cm" Height="1cm" Margin="2" Background="White" Grid.Row="1"/>
+                            <Button Content="5" Width="1.5cm" Height="1cm" Margin="2" Background="White" Grid.Row="1" Grid.Column="1"/>
+                            <Button Content="6" Width="1.5cm" Height="1cm" Margin="2" Background="White" Grid.Row="1" Grid.Column="2"/>
+
+                            <Button Content="1" Width="1.5cm" Height="1cm" Margin="2" Background="White" Grid.Row="2"/>
+                            <Button Content="2" Width="1.5cm" Height="1cm" Margin="2" Background="White" Grid.Row="2" Grid.Column="1"/>
+                            <Button Content="3" Width="1.5cm" Height="1cm" Margin="2" Background="White" Grid.Row="2" Grid.Column="2"/>
+
+                            <Button Content="0" Width="1.5cm" Height="1cm" Margin="2" Background="White" Grid.Row="3"/>
+                            <Button Content="00" Width="1.5cm" Height="1cm" Margin="2" Background="White" Grid.Row="3" Grid.Column="1"/>
+                            <Button Content="." Width="1.5cm" Height="1cm" Margin="2" Background="White" Grid.Row="3" Grid.Column="2"/>
+                        </Grid>
+                        <Grid Grid.Column="1"> <!---X ET PLU-->
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Button Content="X" Width="1.5cm" Height="2.1cm" Margin="2" Background="Gray" FontWeight="Bold"/>
+                            <Button Content="PLU" Width="1.5cm" Height="2.1cm" Margin="2" Background="Red" FontWeight="Bold" Grid.Row="1"/>
+                        </Grid>
+
+                        
+
+                    </Grid> <!---Ferme le pavé et X, PLU-->
+                        <!---Faire ici le grid avec les touches de paiement-->
+
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Button Content="BONS" Width="150" Height="40" Margin="5"/>
+                        <Button Content="CARTE" Width="150" Height="40" Margin="5" Grid.Row="1"/>
+                        <Button Content="CASH" Width="150" Height="40" Margin="5" Grid.Row="2"/>
+                        <Button Content="TOTAL" Width="150" Height="40" Margin="5" Grid.Row="3"/>
+                    </Grid>
+                        
+                        
+                        
+                        
+                        
+                    </Grid>
+                
+                
+             </Grid> 
         </StackPanel>
+            
+
     </Grid>
 </Window>
