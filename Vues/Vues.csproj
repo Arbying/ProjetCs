@@ -5,6 +5,11 @@
     <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <Authors>VueModele</Authors>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VueModele\VueModele.csproj" />
+  </ItemGroup>
 
 </Project>

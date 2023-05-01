@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Caisse V1.406 - Demo" Height="700" Width="1200"
         WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="500"/>
@@ -79,7 +82,7 @@
 
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                         <Button Content="+ Client" Width="80" Height="80" Background="Yellow"  Foreground="Black" FontWeight="Bold"/>
-                        <Button Content="+ Article" Width="80" Height="80" Background="Yellow" Foreground="Black" FontWeight="Bold"/>
+                        <Button x:Name="AddArticleButton" Content="+ Article" Command="{Binding OpenNewArticleWindowCommand}" />
                         <Button Content="A faire" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
                         <Button Content="A faire" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>
                         <Button Content="A faire" Width="80" Height="80" Background="DarkGreen" Foreground="Black" FontWeight="Bold"/>

@@ -1,6 +1,7 @@
-﻿<Window x:Class="NewClient.MainWindow"
+﻿<Window x:Class="Vues.MainWindowsNewClient"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Vues"
         Title="Nouveau client" Height="200" Width="400"
         WindowStartupLocation="CenterScreen"
         Background="#8BC34A">
